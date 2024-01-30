@@ -7,21 +7,20 @@ paths["pineapple"] := "
 send {e down}
 HyperSleep(100)
 send {e up}
-Sleep, 2500
-send {" RotRight " 3}
-" nm_Walk(7, BackKey) "
-" nm_Walk(10, BackKey, RightKey) "
-" nm_Walk(10, RightKey) "
-" nm_Walk(13, RightKey, FwdKey) "
-" nm_Walk(14, BackKey, RightKey) "
-send {" FwdKey " down}{" LeftKey " down}
-Walk(14)
-send {" LeftKey " up}
-" nm_Walk(10, RightKey) "
-send {" FwdKey " up}
-" nm_Walk(7, BackKey) "
-send {" RotRight " 1}
-HyperSleep(100)
+HyperSleep(500)
+send {" RotRight " 4}{" RightKey " down}
+HyperSleep(1000)
+send {space}
+HyperSleep(500)
+send {space}
+HyperSleep(2900)
+send {" RightKey " up}{" FwdKey " down}{" LeftKey " down}
+HyperSleep(1600)
+send {space}
+HyperSleep(1000)
+" nm_Walk(14, FwdKey, LeftKey) "
+" nm_Walk(10, FwdKey) "
+" nm_Walk(7, BackKey, RightKey) "
 )"
 }
 else {
@@ -44,3 +43,4 @@ send {" RotLeft " 2}
 }
 ;path 230212 zaappiix
 ;path 230729 noobyguy: If (HiveBees < 25) && (MoveMethod = "cannon") & walk path
+;path ferox7274: cannon path

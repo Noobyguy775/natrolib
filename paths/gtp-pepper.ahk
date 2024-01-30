@@ -1,15 +1,19 @@
 ﻿paths["pepper"] := "
 (LTrim Join`r`n
 ;gotoramp
-Send {space down}
-HyperSleep(300)
+Send {space down}{" RightKey " down}
+Sleep, 100
 Send {space up}
-" nm_Walk(36, RightKey) "
-send {space down}
+Walk(2)
+Send {" FwdKey " down}
+Walk(1.8)
+Send {" FwdKey " up}
+Walk(30)
+send {" RightKey " up}{space down}
 HyperSleep(300)
 send {space up}
 " nm_Walk(4, RightKey) "
-" nm_Walk(6, FwdKey) "
+" nm_Walk(5, FwdKey) "
 " nm_Walk(3, RightKey) "
 send {space down}
 HyperSleep(300)
@@ -48,5 +52,6 @@ send {" RotRight " 2}
 Send {" RightKey " up}
 " nm_Walk(10, FwdKey) "
 " nm_Walk(10, BackKey, LeftKey) "
+" nm_Walk(4, BackKey) " 
 )"
 ;path 230212 zaappiix
